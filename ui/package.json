@@ -1,0 +1,33 @@
+{
+  "name": "@ryu/token-table-app",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "The Ryu Token Table companion: a simulated-token poker table with a typed host bridge and deterministic demo mode.",
+  "scripts": {
+    "build": "vite build",
+    "check-types": "tsc --noEmit",
+    "test": "bun test"
+  },
+  "dependencies": {
+    "@base-ui/react": "^1.5.0",
+    "@ryu/app-host": "workspace:*",
+    "@ryu/blocks": "workspace:*",
+    "@ryu/ui": "workspace:*",
+    "@toolwind/corner-shape": "0.0.8-3",
+    "class-variance-authority": "^0.7.1",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0"
+  },
+  "devDependencies": {
+    "@ryu/config": "workspace:*",
+    "@tailwindcss/postcss": "^4.2.1",
+    "@types/react": "^19.2.10",
+    "@types/react-dom": "^19.2.0",
+    "@vitejs/plugin-react": "^5.2.0",
+    "tailwindcss": "^4",
+    "typescript": "^5",
+    "vite": "^6",
+    "vite-plugin-singlefile": "^2.3.0"
+  }
+}
