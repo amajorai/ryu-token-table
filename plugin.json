@@ -1,0 +1,24 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "ryu.token-table",
+  "version": "0.1.0",
+  "description": "A catalog preview of a planned cosmetic six-max Texas Hold'em table with simulated tokens.",
+  "author": {
+    "name": "Ryu",
+    "url": "https://ryuhq.com"
+  },
+  "homepage": "https://github.com/amajorai/ryu-token-table",
+  "repository": "https://github.com/amajorai/ryu-token-table",
+  "keywords": [
+    "poker",
+    "texas-holdem",
+    "table",
+    "simulated-tokens"
+  ],
+  "extensions": {
+    "com.ryuhq.ryu": {
+      "id": "@ryu/token-table",
+      "displayName": "Token Table"
+    }
+  }
+}
