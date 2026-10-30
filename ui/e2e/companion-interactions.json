@@ -1,0 +1,221 @@
+{
+  "version": 1,
+  "package": "token-table",
+  "scope": "complete",
+  "expectedRows": 16,
+  "selector": {
+    "spec": "e2e/token-table-companion.spec.ts",
+    "config": "e2e/token-table-companion.playwright.config.ts"
+  },
+  "evidenceBoundary": "Token Table is a six-seat simulated-token poker companion; it has no token import/parser/search/filter/export UI. The browser suite exercises the shipped demo and the compiled HTML through the real sandboxed ExtensionHost. Its host service fixture is deterministic and local, verifies exact HTTP bridge requests and realtime publication, and does not prove a live sidecar, multiplayer peer, or monetary/quota behavior.",
+  "assertions": [
+    {
+      "row": {
+        "package": "token-table",
+        "source_file": "apps-store/token-table/ui/src/TokenTable.tsx",
+        "line": "200",
+        "component": "IconButton",
+        "tag": "Button",
+        "events": "onClick"
+      },
+      "testTitle": "hand history opens with the current actions and closes from its own control",
+      "assertionName": "The table toolbar opens the hand history control.",
+      "assertionMarker": "Open hand history"
+    },
+    {
+      "row": {
+        "package": "token-table",
+        "source_file": "apps-store/token-table/ui/src/TokenTable.tsx",
+        "line": "227",
+        "component": "HistoryPopover",
+        "tag": "IconButton",
+        "events": "onClick"
+      },
+      "testTitle": "hand history opens with the current actions and closes from its own control",
+      "assertionName": "The close control returns focus to the history trigger.",
+      "assertionMarker": "Close hand history"
+    },
+    {
+      "row": {
+        "package": "token-table",
+        "source_file": "apps-store/token-table/ui/src/TokenTable.tsx",
+        "line": "271",
+        "component": "ActionButton",
+        "tag": "Button",
+        "events": "onClick"
+      },
+      "testTitle": "bet sizing preset and slider change the submitted raise and resulting table state",
+      "assertionName": "A sized action changes the displayed pot, stack, and last action.",
+      "assertionMarker": "You raise 15"
+    },
+    {
+      "row": {
+        "package": "token-table",
+        "source_file": "apps-store/token-table/ui/src/TokenTable.tsx",
+        "line": "324",
+        "component": "ActionDock",
+        "tag": "Button",
+        "events": "onClick"
+      },
+      "testTitle": "bet sizing preset and slider change the submitted raise and resulting table state",
+      "assertionName": "The 33 percent preset derives a 14 token sizing value from the current pot.",
+      "assertionMarker": "33%"
+    },
+    {
+      "row": {
+        "package": "token-table",
+        "source_file": "apps-store/token-table/ui/src/TokenTable.tsx",
+        "line": "337",
+        "component": "ActionDock",
+        "tag": "Slider",
+        "events": "onValueChange"
+      },
+      "testTitle": "bet sizing preset and slider change the submitted raise and resulting table state",
+      "assertionName": "The keyboard-operable amount slider changes the next action to 15 tokens.",
+      "assertionMarker": "Bet amount"
+    },
+    {
+      "row": {
+        "package": "token-table",
+        "source_file": "apps-store/token-table/ui/src/TokenTable.tsx",
+        "line": "351",
+        "component": "ActionDock",
+        "tag": "ActionButton",
+        "events": "onClick"
+      },
+      "testTitle": "fold completes the hand and dealing again advances the hand with a fresh board",
+      "assertionName": "Fold completes the current hand before offering the next deal.",
+      "assertionMarker": "Fold"
+    },
+    {
+      "row": {
+        "package": "token-table",
+        "source_file": "apps-store/token-table/ui/src/TokenTable.tsx",
+        "line": "357",
+        "component": "ActionDock",
+        "tag": "ActionButton",
+        "events": "onClick"
+      },
+      "testTitle": "the real ExtensionHost bridge joins, calls, and publishes the updated table snapshot",
+      "assertionName": "Call forwards the selected player action through the host bridge.",
+      "assertionMarker": "Call, 10 tokens"
+    },
+    {
+      "row": {
+        "package": "token-table",
+        "source_file": "apps-store/token-table/ui/src/TokenTable.tsx",
+        "line": "366",
+        "component": "ActionDock",
+        "tag": "ActionButton",
+        "events": "onClick"
+      },
+      "testTitle": "bet sizing preset and slider change the submitted raise and resulting table state",
+      "assertionName": "Raise submits the selected sizing and updates the demo snapshot.",
+      "assertionMarker": "Raise, 15 tokens"
+    },
+    {
+      "row": {
+        "package": "token-table",
+        "source_file": "apps-store/token-table/ui/src/TokenTable.tsx",
+        "line": "378",
+        "component": "ActionDock",
+        "tag": "Button",
+        "events": "onClick"
+      },
+      "testTitle": "fold completes the hand and dealing again advances the hand with a fresh board",
+      "assertionName": "Deal next hand increments the hand and restores the active table state.",
+      "assertionMarker": "Deal next hand"
+    },
+    {
+      "row": {
+        "package": "token-table",
+        "source_file": "apps-store/token-table/ui/src/TokenTable.tsx",
+        "line": "418",
+        "component": "BuyInPanel",
+        "tag": "Button",
+        "events": "onClick"
+      },
+      "testTitle": "leave, buy-in bounds, and joining update the displayed seat and stack",
+      "assertionName": "The buy-in decrement reaches its minimum and disables at the bound.",
+      "assertionMarker": "Decrease buy-in"
+    },
+    {
+      "row": {
+        "package": "token-table",
+        "source_file": "apps-store/token-table/ui/src/TokenTable.tsx",
+        "line": "429",
+        "component": "BuyInPanel",
+        "tag": "Button",
+        "events": "onClick"
+      },
+      "testTitle": "leave, buy-in bounds, and joining update the displayed seat and stack",
+      "assertionName": "The buy-in increment moves the bounded value back to 150 tokens.",
+      "assertionMarker": "Increase buy-in"
+    },
+    {
+      "row": {
+        "package": "token-table",
+        "source_file": "apps-store/token-table/ui/src/TokenTable.tsx",
+        "line": "440",
+        "component": "BuyInPanel",
+        "tag": "Button",
+        "events": "onClick"
+      },
+      "testTitle": "leave, buy-in bounds, and joining update the displayed seat and stack",
+      "assertionName": "Joining removes the buy-in panel and shows the bought-in stack.",
+      "assertionMarker": "Buy in & take seat"
+    },
+    {
+      "row": {
+        "package": "token-table",
+        "source_file": "apps-store/token-table/ui/src/TokenTable.tsx",
+        "line": "536",
+        "component": "TokenTable",
+        "tag": "Popover",
+        "events": "onOpenChange"
+      },
+      "testTitle": "hand history opens with the current actions and closes from its own control",
+      "assertionName": "Opening and closing the history updates the rendered popover state.",
+      "assertionMarker": "Hand history"
+    },
+    {
+      "row": {
+        "package": "token-table",
+        "source_file": "apps-store/token-table/ui/src/TokenTable.tsx",
+        "line": "544",
+        "component": "TokenTable",
+        "tag": "PopoverTrigger",
+        "events": ""
+      },
+      "testTitle": "hand history opens with the current actions and closes from its own control",
+      "assertionName": "The shared trigger toggles the hand-history popover.",
+      "assertionMarker": "Open hand history"
+    },
+    {
+      "row": {
+        "package": "token-table",
+        "source_file": "apps-store/token-table/ui/src/TokenTable.tsx",
+        "line": "546",
+        "component": "TokenTable",
+        "tag": "Button",
+        "events": ""
+      },
+      "testTitle": "hand history opens with the current actions and closes from its own control",
+      "assertionName": "The trigger's button opens the current hand's history.",
+      "assertionMarker": "raises · 8 tokens"
+    },
+    {
+      "row": {
+        "package": "token-table",
+        "source_file": "apps-store/token-table/ui/src/TokenTable.tsx",
+        "line": "555",
+        "component": "TokenTable",
+        "tag": "Button",
+        "events": "onClick"
+      },
+      "testTitle": "leave, buy-in bounds, and joining update the displayed seat and stack",
+      "assertionName": "Leaving the table exposes the join flow for the vacated seat.",
+      "assertionMarker": "Leave table"
+    }
+  ]
+}
