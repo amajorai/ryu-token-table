@@ -1,0 +1,19 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "ryu.token-table",
+  "version": "0.1.1",
+  "description": "A cosmetic six-max no-limit Texas Hold'em table played with simulated tokens, run by a local sidecar. It never touches billing, quotas, wallets, or real money.",
+  "author": {
+    "name": "Ryu",
+    "url": "https://ryuhq.com"
+  },
+  "homepage": "https://github.com/amajorai/ryu-token-table",
+  "repository": "https://github.com/amajorai/ryu-token-table",
+  "keywords": ["poker", "texas-holdem", "table", "simulated-tokens"],
+  "extensions": {
+    "com.ryuhq.ryu": {
+      "id": "@ryu/token-table",
+      "displayName": "Token Table"
+    }
+  }
+}
